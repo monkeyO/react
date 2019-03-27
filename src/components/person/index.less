@@ -1,0 +1,54 @@
+
+.person-avatar {
+    text-align: center;
+    margin-top: 10%;
+    >img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        animation: goAvatar .8s cubic-bezier(.165, .84, .44, 1) forwards;
+    }
+}
+
+.person-intro {
+    margin-top: 15%;
+    .intro-item {
+        // background: #ffffff;
+        background: rgba(83, 83, 83, .6);
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ffffff;
+        animation: go .8s cubic-bezier(.165, .84, .44, 1) forwards;
+    }
+}
+@media screen and (max-width: 375px) {
+    .person-avatar {
+        margin-top: 20%;
+    }
+    .person-intro {
+        margin-top: 15%;
+    }
+}
+@keyframes goAvatar {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -300px, 0)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0)
+    }
+}
+
+@keyframes go {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 110px, 0)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0)
+    }
+}
