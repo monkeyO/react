@@ -3,12 +3,20 @@ import { Link } from 'react-router-dom';
 import './content.less';
 import { Icon } from 'antd';
 import allContent from '../../utils/content';
+import { getUser } from '../../axios/api';
+
 export default class Content extends Component {
     state = {
         showIndex: 1000
     }
     componentWillMount() {
+		this.init();
     }
+	//数据初始化
+	async init(){
+	   let res = await getUser();
+	   
+	}
     //鼠标悬浮
     makeOver(index) {
         this.setState({
