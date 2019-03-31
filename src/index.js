@@ -9,4 +9,5 @@ ReactDOM.render(
    </div>, 
    document.querySelector('#root')
 );
+console.log("12");
 serviceWorker.unregister();
