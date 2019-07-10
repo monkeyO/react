@@ -6,7 +6,6 @@ const service = axios.create({
 });
 /****** request拦截器==>对请求参数做处理 ******/
 service.interceptors.request.use(config => {
-	let myToken = Cookies.get("token");
 	// 	if (myToken) {
 	// 		config.headers['token'] = myToken
 	// 	}
