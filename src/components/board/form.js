@@ -23,7 +23,7 @@ class Forms extends Component {
             <Form className="login-form" >
                 <FormItem>
                     {getFieldDecorator('userName', {
-                        rules: [{ required: true, message: '用户名必填测试!' }],
+                        rules: [{ required: true, message: '用户名必填测试提交测试!' }],
                     })(
                         <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="用户名" />
                     )}
